@@ -22,7 +22,7 @@ body{
     clear: both;
 }
 .container{
-    /* width:1200px; */
+    max-width:1200px;
     margin:0 auto; 
 }
 .container-big{
@@ -35,9 +35,15 @@ body{
     width:80%;
     margin:0 auto;
 }
-
+.w-25{
+    width: 25%;
+}
 .w-30{
     width: 30%;
+}
+
+.w-40{
+    width: 40%;
 }
 
 .w-50{
@@ -51,6 +57,10 @@ body{
 .w-100{
     width: 100%;
 
+}
+
+.grey-bg{
+    background-color: #f5f5f5;
 }
 
 
@@ -97,6 +107,10 @@ body{
 
 .border-grey{
     border: 1px solid lightslategray;
+}
+
+.relative{
+    position: relative;
 }
 
 .main-nav{
@@ -198,7 +212,8 @@ section{
 
 
 .price .col .card-content ul{
-    padding-inline-start: 20px;
+    /* padding-inline-start: 20px; */
+    list-style-position: inside;
 }
 
 .price .col .card-content ul li{
@@ -257,6 +272,72 @@ section{
 .row .card p{
     padding: 20px 0; 
 }
+
+
+/* PARTNER-GRID */
+.companies{
+    height: 405px;
+
+}
+.content-mid{
+    height: 400px;
+}
+
+.companies .col img{
+    height: 30px;
+    filter: invert(1);
+}
+
+.companies .img-partner{
+    line-height: 200px;
+
+}
+
+.companies .row-partner .col {
+    /* border: 1px solid lightgreen; */
+    height: 200px;
+}
+
+
+.img-mid img{
+    height: 40px;
+    margin: 20px 20px; 
+}
+
+/* Partner colors */
+.green-bg{
+    background-color: #74c1aa;
+}
+
+.brown-bg{
+    background-color: #61082b;
+}
+
+.blue-florida{
+    background-color: #0093ce;
+}
+
+.red-bg{
+    background-color: #ff1c1c;
+}
+
+.red2-bg{
+    background-color: #d5001f;
+}
+
+.blue-lonely{
+    background-color: #0d2481;
+}
+
+.blue-hearst{
+    background-color: #b4d0e7;
+}
+
+.yellow-bg{
+    background-color: #ffd830;
+}
+
+
 
 
 
