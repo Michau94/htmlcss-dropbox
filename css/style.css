@@ -48,6 +48,13 @@ body{
     width: 70%;
 }
 
+.w-100{
+    width: 100%;
+
+}
+
+
+
 
 .text-center{
     text-align: center;
@@ -68,6 +75,15 @@ body{
 .btn{
     padding: 10px 20px;
     background-color: #0061ff;
+    color: white;
+
+}
+
+.btn-white{
+    box-shadow: 1px 1px 2px 1px  black;
+    background-color: white;
+    color: black;
+    padding: 10px 15px;
 }
 
 .text-normal{
@@ -102,12 +118,12 @@ nav .main-nav .nav-bar {
     vertical-align: middle;
 }
 
-.main-nav .col .content li a, #try-btn {
+.main-nav .col .content li a, #try-btn, .btn-part a {
     text-decoration: none;
     color: black;
 }
 
-.main-nav .col .content li a:hover, #try-btn:hover{
+.main-nav .col .content li a:hover, #try-btn:hover, .btn-part:hover{
     text-decoration: underline;
 }
 
@@ -214,6 +230,25 @@ section{
 .bottom-enterprise .contact-enterprise *{
     padding: 10px 0;
 }
+
+
+/* PARTNERSHIP */
+
+.partnership .part-text 
+{
+    padding: 30px 20px;
+}
+
+.partnership .part-text .btn-part{
+    margin-top: 40px; 
+}
+
+.partnership .part-text h2{
+    padding: 20px 0;
+}
+
+
+
 
 
 
