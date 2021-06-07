@@ -70,6 +70,10 @@ body{
     background-color: #0061ff;
 }
 
+.text-normal{
+    font-weight: normal;
+}
+
 .col{
     float: left;
     /* border: 1px solid black; */
@@ -187,9 +191,9 @@ section{
     font-size: 0.7em ;
 }
 
-.card-title{
+.card-title, .enterprise-title{
     border-bottom: 1px solid lightgray;
-    padding: 10px 0; 
+    padding: 15px 0; 
 }
 
 .card-top, .card-bottom{
@@ -199,6 +203,21 @@ section{
 .card-btn {
     margin: 15px 0;
 }
+
+.btn-contact{
+    margin-top:30px;  
+}
+
+.contact-enterprise{
+    padding: 10px
+}
+.bottom-enterprise .contact-enterprise *{
+    padding: 10px 0;
+}
+
+
+
+
 
 
 
