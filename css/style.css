@@ -32,7 +32,7 @@ body{
 }
 
 .container-small{
-    width: 95%;
+    width:80%;
     margin:0 auto;
 }
 
@@ -74,10 +74,14 @@ body{
     float: left;
     /* border: 1px solid black; */
 }
-header{
-    height:100px;
+
+.border-grey{
+    border: 1px solid lightslategray;
+}
+
+.main-nav{
+    height: 100px;
     line-height: 100px;
-    
 }
 #main-logo-img{
     height: 30px;
@@ -120,7 +124,7 @@ nav .content .nav-bar-left, .nav-bar-right{
 .jumbotron{
     line-height: normal;
     padding: 30px;
-    height: 550px;
+    height: 600px;
 }
 
 .jumbotron .content{
@@ -138,12 +142,69 @@ nav .content .nav-bar-left, .nav-bar-right{
 }
 
 .btn-jumbo div:first-of-type{
-    padding: 30px 0;
+    padding: 20px 0;
 
 }
 
 
 /* MAIN */
+
+section{
+    margin:100px 0; 
+}
+
+.title-container{
+    margin: 30px 0; 
+}
+
+.card {
+    padding: 5px;;
+}
+
+.price .col:nth-child(2){
+    margin:0 30px; 
+}
+
+.card span{
+    font-size: 0.7em;
+}
+
+.price{
+    margin:30px 0; 
+}
+.price .col {
+    width: calc((100%/3) - 30px);
+}
+
+
+.price .col .card-content ul{
+    padding-inline-start: 20px;
+}
+
+.price .col .card-content ul li{
+    list-style-type: none;
+    padding:15px 0; 
+    font-size: 0.7em ;
+}
+
+.card-title{
+    border-bottom: 1px solid lightgray;
+    padding: 10px 0; 
+}
+
+.card-top, .card-bottom{
+    padding: 5px;
+}
+
+.card-btn {
+    margin: 15px 0;
+}
+
+
+
+
+
+
 
 
 
