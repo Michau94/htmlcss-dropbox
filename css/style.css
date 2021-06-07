@@ -11,6 +11,7 @@
 body{
     color: black;
     font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
 
 }
 
@@ -20,16 +21,33 @@ body{
     display: table;
     clear: both;
 }
-
+.container{
+    /* width:1200px; */
+    margin:0 auto; 
+}
 .container-big{
     max-width: 95%;
     margin: 0 auto;
     /* border:1px solid black; */
 }
 
+.container-small{
+    width: 95%;
+    margin:0 auto;
+}
+
+.w-30{
+    width: 30%;
+}
+
 .w-50{
     width: 50%;
 }
+
+.w-70{
+    width: 70%;
+}
+
 
 .text-center{
     text-align: center;
@@ -41,6 +59,10 @@ body{
 
 .text-white{
     color: white;
+}
+
+.bg-blue{
+    background-color: #b0cce4;
 }
 
 .btn{
@@ -60,7 +82,7 @@ header{
 #main-logo-img{
     height: 30px;
     vertical-align: middle;
-    margin-right: 20px;
+    margin: 0 20px;
 }
 nav .main-nav .nav-bar {
     vertical-align: middle;
@@ -72,12 +94,12 @@ nav .main-nav .nav-bar {
     vertical-align: middle;
 }
 
-.main-nav .col .content li a {
+.main-nav .col .content li a, #try-btn {
     text-decoration: none;
     color: black;
 }
 
-.main-nav .col .content li a:hover{
+.main-nav .col .content li a:hover, #try-btn:hover{
     text-decoration: underline;
 }
 
@@ -85,9 +107,48 @@ nav .content .nav-bar-left, .nav-bar-right{
     display: inline-block;
 }
 
-#btn-begin{
+#btn-begin, #try-btn{
     color: white;
 }
+
+/* JUMBO */
+
+#main-title{
+    font-size: 50px;
+    font-weight: 600;
+}
+.jumbotron{
+    line-height: normal;
+    padding: 30px;
+    height: 550px;
+}
+
+.jumbotron .content{
+    margin-top: 40px;
+}
+
+ .jumbotron .col .content-img-jumbo img{
+    width:100%;
+    padding-top: 45px;
+    padding-left: 30px;
+}
+
+.btn-jumbo{
+    padding: 30px 0;  
+}
+
+.btn-jumbo div:first-of-type{
+    padding: 30px 0;
+
+}
+
+
+/* MAIN */
+
+
+
+
+
 
 
 
