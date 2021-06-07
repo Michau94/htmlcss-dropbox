@@ -247,6 +247,19 @@ section{
     padding: 20px 0;
 }
 
+/* SECTION OPERATION DB BUSINESS */
+
+.row .col{
+    width: calc(100%/3); 
+    padding-right: 40px;
+}
+
+.row .card p{
+    padding: 20px 0; 
+}
+
+
+
 
 
 
