@@ -28,7 +28,6 @@ body{
 .container-big{
     max-width: 95%;
     margin: 0 auto;
-    /* border:1px solid black; */
 }
 
 .container-small{
@@ -37,13 +36,20 @@ body{
 }
 
 .invert{
- filter: invert(1);
+    filter: invert(1);
 }
 
 .content-mid hr{
     width:20%; 
 }
 
+.border-grey{
+    border: 1px solid lightslategray;
+}
+
+.relative{
+    position: relative;
+}
 /* width */
 
 .w-20{
@@ -151,9 +157,9 @@ body{
 
 
 
-/* BUTTON DA SISTEMARE */
+/* BUTTON */
 
-.btn{
+.btn {
     padding: 10px 20px;
     background-color: #0061ff;
     color: white;   
@@ -166,29 +172,56 @@ body{
     padding: 10px 15px;
 }
 
-
-
-.main-nav .col .content li a, #try-btn, .btn-part a, .btn-bottom, .footer-top .content li a  {
+.main-nav .col .content li a, .jumbotron .btn-jumbo a, .btn-part a, .btn-bottom, .footer-top .content li a, .price div > a, .enterprise a{
     text-decoration: none;
-    color: black;
 }
 
-.main-nav .col .content li a:hover, #try-btn:hover, .btn-part:hover, .btn-bottom:hover, .footer-top li a:hover {
+.main-nav .col .content li a:hover, .jumbotron .btn-jumbo a:hover, .btn-part:hover, .btn-bottom:hover, .footer-top li a:hover, .price div > a:hover, .enterprise a:hover {
     text-decoration: underline;
 }
 
+/* LIST ICON PSEUDO */
+::before{
+    font-family: "Font Awesome 5 Free";
+    padding-right: 5px;
+    font-style: normal;
+    font-weight: 700;
+
+}
+.user::before{
+    content: '\f007';
+}
+.team::before{
+    content: '\f1ad';
+}
+
+.folder::before{
+    content: '\f07b';
+}
+
+.check:before{
+    content: '\f00c';
+    color:#0061ff
+}
+
+.pencil:before{
+    content: '\f303';
+}
+
+.users:before{
+    content: '\f234';
+}
+
+.smile::before{
+    content: '\f4da';
+}
+
+
 .col{
     float: left;
-    /* border: 1px solid black; */
 }
 
-.border-grey{
-    border: 1px solid lightslategray;
-}
-
-.relative{
-    position: relative;
-}
+/* NAV */
 
 .main-nav{
     height: 100px;
@@ -209,13 +242,8 @@ nav .main-nav .nav-bar {
     vertical-align: middle;
 }
 
-
 nav .content .nav-bar-left, .nav-bar-right{
     display: inline-block;
-}
-
-#btn-begin, #try-btn{
-    color: white;
 }
 
 /* JUMBO */
@@ -269,7 +297,7 @@ nav .content .nav-bar-left, .nav-bar-right{
     list-style-type: none;
     padding:15px 20px; 
     font-size: 0.7em ;
-    text-indent: -0.5em;
+    text-indent: -1.5em;
 }
 
 .card-title, .enterprise-title{
