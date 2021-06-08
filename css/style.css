@@ -26,12 +26,12 @@ body{
     margin: 0 auto; 
 }
 .container-big{
-    max-width: 1300px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
 .container-small{
-    width:1000px;
+    width:1400px;
     margin:0 auto;
 }
 
@@ -123,6 +123,10 @@ body{
     padding: 50px 0;
 }
 
+.pt-100{
+    padding-top: 100px;
+}
+
 .pt-200{
     padding-top: 200px;
 }
@@ -150,7 +154,7 @@ body{
     color: white;
 }
 .text-grey{
-    color: lightgray;
+    color: grey;
 }
 
 .bg-blue{
@@ -168,6 +172,11 @@ body{
 
 .violet-text{
     color:#0d2481
+}
+.nav-position{
+    position: fixed;
+    width: 100%;
+    background-color: white;
 }
 
 
@@ -270,6 +279,7 @@ nav .content .nav-bar-left, .nav-bar-right{
     line-height: normal;
     padding: 30px;
     height: 600px;
+
 }
 
 .jumbotron .content{
