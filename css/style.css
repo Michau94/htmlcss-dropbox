@@ -198,10 +198,12 @@ body{
 
 .main-nav .col .content li a, .jumbotron .btn-jumbo a, .btn-part a, .btn-bottom, .footer-top .content li a, .price div > a, .enterprise a{
     text-decoration: none;
+    transition: border-radius 1s ease-in-out;
 }
 
 .main-nav .col .content li a:hover, .jumbotron .btn-jumbo a:hover, .btn-part:hover, .btn-bottom:hover, .footer-top li a:hover, .price div > a:hover, .enterprise a:hover {
     text-decoration: underline;
+    border-radius: 10px;
 }
 
 /* LIST ICON PSEUDO */
@@ -441,7 +443,10 @@ nav .content .nav-bar-left, .nav-bar-right{
 .yellow-bg{
     background-color: #ffd830;
 }
+.companies .img-partner{
+    transition: box-shadow 1s ease-in-out;
 
+}
 .companies .img-partner:hover {
     box-shadow:0px 0px 0px 10px rgba(255,255,255,0.4) inset;
 }
