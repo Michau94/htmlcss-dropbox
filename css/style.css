@@ -22,16 +22,16 @@ body{
     clear: both;
 }
 .container{ 
-    max-width:1600px;
+    width: 1600px;
     margin: 0 auto; 
 }
 .container-big{
-    max-width: 1500px;
+    width: 95%;
     margin: 0 auto;
 }
 
 .container-small{
-    width:1400px;
+    width:70%;
     margin:0 auto;
 }
 
@@ -114,6 +114,9 @@ body{
 .p-5{
     padding:5px;
 }
+.p-20{
+    padding: 20px;
+}
 
 .pt-50{
     padding-top: 50px;
@@ -173,10 +176,41 @@ body{
 .violet-text{
     color:#0d2481
 }
+
+/* NAVBAR */
+
+header{
+    height: 100px;
+}
+
 .nav-position{
     position: fixed;
+    top:0;
+    left: 0;
     width: 100%;
     background-color: white;
+    border-bottom: 1px solid lightgray;
+
+}
+
+.nav-position .main-nav li:hover {
+    border-bottom: 2px solid grey;
+
+}
+
+/* ANIMATION */
+.btn-jumbo .fas{
+    animation: bounce 1s cubic-bezier(.91,0,.84,.85) infinite alternate-reverse;
+}
+@keyframes bounce {
+    from {
+        position: relative;
+        top:30px;
+    }
+    to {
+        position: relative;
+        top: 5px;
+    }
 }
 
 
@@ -201,9 +235,26 @@ body{
     transition: border-radius 1s ease-in-out;
 }
 
-.main-nav .col .content li a:hover, .jumbotron .btn-jumbo a:hover, .btn-part:hover, .btn-bottom:hover, .footer-top li a:hover, .price div > a:hover, .enterprise a:hover {
+.jumbotron .btn-jumbo a:hover, .btn-part:hover, .btn-bottom:hover, .footer-top li a:hover, .price div > a:hover, .enterprise a:hover {
     text-decoration: underline;
     border-radius: 10px;
+}
+
+.checkbox{
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+.checked{
+    border: 5px solid #0061ff;
+}
+
+.unchecked{
+    border: 1px solid black;
 }
 
 /* LIST ICON PSEUDO */
@@ -241,6 +292,15 @@ body{
     content: '\f4da';
 }
 
+.arrow-up::before{
+    content:'\f077'
+}
+
+.arrow-down:before{
+    content: '\f078';
+}
+
+
 
 .col{
     float: left;
@@ -249,7 +309,7 @@ body{
 /* NAV */
 
 .main-nav{
-    height: 100px;
+    height: 100%;
     line-height: 100px;
 }
 #main-logo-img{
@@ -298,7 +358,7 @@ nav .content .nav-bar-left, .nav-bar-right{
     padding: 30px 0;  
 }
 
-.btn-jumbo div:first-of-type{
+.btn-jumbo div:first-of-type {
     padding: 20px 0;
 
 }
@@ -306,7 +366,7 @@ nav .content .nav-bar-left, .nav-bar-right{
 
 /* MAIN */
  .price .card{
-    height:800px; 
+    height:900px; 
 }
 
 .card span{
@@ -334,11 +394,6 @@ nav .content .nav-bar-left, .nav-bar-right{
     border-bottom: 1px solid lightgray;
     padding: 15px 0; 
 }
-
-.card-top, .card-bottom{
-    padding: 5px;
-} 
-/* da cancellare */
 
 .btn-contact{
     margin-top:30px;  
@@ -391,6 +446,8 @@ nav .content .nav-bar-left, .nav-bar-right{
     height: 30px;
     filter: invert(1);
 }
+
+
 
 
 .companies .img-partner{
@@ -474,6 +531,23 @@ nav .content .nav-bar-left, .nav-bar-right{
     list-style-type: none;
     padding: 10px 0;
     font-weight: normal;
+}
+
+
+/* EXTRA */
+
+.hidden{
+    display: none;
+}
+
+.floated:hover p{
+    display: block;
+
+}
+
+.floated:hover .content-right::before{
+    font-family: "Font Awesome 5 Free";
+    content:'\f077';
 }
 
 
