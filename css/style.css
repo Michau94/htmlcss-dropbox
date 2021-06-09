@@ -193,6 +193,7 @@ header {
     width: 100%;
     background-color: white;
     border-bottom: 1px solid grey;
+    z-index: 1;
 }
 
 .nav-position .main-nav li:hover {
@@ -236,7 +237,7 @@ header {
     transition: border-radius 1s ease-in-out;
 }
 
-.jumbotron .btn-jumbo a:hover, .btn-part:hover, .btn-bottom:hover, .footer-top li a:hover, .price div>a:hover, .enterprise a:hover {
+#btn-begin:hover, .jumbotron .btn-jumbo a:hover, .btn-part:hover, .btn-bottom:hover, .footer-top li a:hover, .price div>a:hover, .enterprise a:hover {
     border-radius: 10px;
     filter: brightness(1.5);
 }
@@ -420,9 +421,11 @@ nav .content .nav-bar-left, .nav-bar-right {
     margin-top: 40px;
 }
 
-.partnership .part-text h2 {
+.partnership .part-text h2, .row .card p {
     padding: 20px 0;
 }
+
+/* da sistemare */
 
 /* SECTION OPERATION DB BUSINESS */
 
@@ -431,15 +434,12 @@ nav .content .nav-bar-left, .nav-bar-right {
     padding-right: 40px;
 }
 
-.row .card p {
+/* .row .card p {
     padding: 20px 0;
 }
+da sistemare */
 
 /* PARTNER-GRID */
-
-.companies {
-    height: 400px;
-}
 
 .content-mid {
     height: 400px;
@@ -566,10 +566,6 @@ nav .content .nav-bar-left, .nav-bar-right {
     text-align: center;
 }
 
-.nav-bar-right li ul li {
-    text-decoration: none;
-}
-
 .nav-bar-right li li a {
     padding: 20px;
 }
@@ -577,8 +573,4 @@ nav .content .nav-bar-left, .nav-bar-right {
 .nav-bar-right li li a:hover {
     background-color: dodgerblue;
     border-radius: 20px;
-}
-
-#sub-menu {
-    text-decoration: none;
 }
