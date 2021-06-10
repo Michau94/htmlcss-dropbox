@@ -56,7 +56,7 @@ body {
 }
 
 .scale-u {
-    transform: scale(1.5);
+    transform: scale(2);
 }
 
 /* width */
@@ -71,6 +71,10 @@ body {
 
 .w-30 {
     width: 30%;
+}
+
+.h-50 {
+    height: 50%;
 }
 
 .w-40 {
@@ -109,6 +113,10 @@ body {
 
 .m-lr30 {
     margin: 0 30px;
+}
+
+.m-b50{
+    margin-bottom: 50px;
 }
 
 /* PADDING */
@@ -183,7 +191,7 @@ body {
 /* NAVBAR */
 
 header {
-    height: 100px;
+    height: 100%;
 }
 
 .nav-position {
@@ -425,7 +433,6 @@ nav .content .nav-bar-left, .nav-bar-right {
     padding: 20px 0;
 }
 
-
 /* SECTION OPERATION DB BUSINESS */
 
 .row .col {
@@ -435,21 +442,19 @@ nav .content .nav-bar-left, .nav-bar-right {
 
 /* PARTNER-GRID */
 
-.content-mid {
-    height: 400px;
-}
 
-.companies .col img {
-    height: 30px;
+.companies .col .img-partner img {
+    height: 50px;
     filter: invert(1);
+    position: relative;
+    top: 40%;
+    object-fit: contain; 
+    
 }
 
 .companies .img-partner {
-    line-height: 200px;
-}
-
-.companies .row-partner .col {
-    height: 50%;
+    height: 100%;
+    width: 100%;
 }
 
 .img-mid img {
@@ -568,4 +573,20 @@ nav .content .nav-bar-left, .nav-bar-right {
     background-color: dodgerblue;
     border-radius: 20px;
     color: white;
+}
+
+/* GRID SEMPRE QUADRATA */
+.companies .col-side {
+    width: calc(60% / 2);
+    height: calc(60vw / 2);
+    float: left;
+}
+
+.companies .row-partner {
+    height: 100%;
+    width: 100%;
+}
+
+.companies .mid-col{
+    height:30vw; 
 }
