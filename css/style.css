@@ -196,8 +196,8 @@ header {
     z-index: 1;
 }
 
-.nav-position .main-nav li:hover {
-    box-shadow: 0px -3px 0px 0px #888888 inset;
+.nav-position .main-nav li:hover:not(.nav-bar-right li ul li, .nav-bar-right li:last-child) {
+    box-shadow: 0px -2px 0px 0px #888888 inset;
 }
 
 /* ANIMATION */
@@ -237,7 +237,7 @@ header {
     transition: border-radius 1s ease-in-out;
 }
 
-#btn-begin:hover, .jumbotron .btn-jumbo a:hover, .btn-part:hover, .btn-bottom:hover, .footer-top li a:hover, .price div>a:hover, .enterprise a:hover {
+#btn-begin:hover, .btn-white:hover, .jumbotron .btn-jumbo a:hover, .btn-part:hover, .btn-bottom:hover, .footer-top li a:hover, .price div>a:hover, .enterprise a:hover {
     border-radius: 10px;
     filter: brightness(1.5);
 }
@@ -434,11 +434,6 @@ nav .content .nav-bar-left, .nav-bar-right {
     padding-right: 40px;
 }
 
-/* .row .card p {
-    padding: 20px 0;
-}
-da sistemare */
-
 /* PARTNER-GRID */
 
 .content-mid {
@@ -455,7 +450,7 @@ da sistemare */
 }
 
 .companies .row-partner .col {
-    height: 200px;
+    height: 50%;
 }
 
 .img-mid img {
@@ -573,4 +568,5 @@ da sistemare */
 .nav-bar-right li li a:hover {
     background-color: dodgerblue;
     border-radius: 20px;
+    color: white;
 }
